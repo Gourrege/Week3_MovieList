@@ -25,4 +25,10 @@ export class MovieService {
   {
     return this.movieList;
   }
+
+  addMovie(movietitle:string, moviedirector:string, movieyear:number)
+  {
+    this.movieList.push({title:movietitle, director:moviedirector, year:movieyear})
+
+  }
 }
