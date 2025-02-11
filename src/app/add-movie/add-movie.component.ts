@@ -13,7 +13,7 @@ export class AddMovieComponent {
 
   addNewMovie(movietitle:HTMLInputElement, moviedirector:HTMLInputElement, movieyear:HTMLInputElement):boolean
   {
-    this.movieService.addMovie(movietitle.value,moviedirector.value,movieyear.value);
+    this.movieService.addMovie(movietitle.value,moviedirector.value,Number(movieyear.value));
     return false
   }
 
